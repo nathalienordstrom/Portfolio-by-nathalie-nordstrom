@@ -228,13 +228,14 @@ body {
     height: 800px;
     justify-items: center;
     text-align: left;
+    border: red solid 2px;
 }
 
 
 
 .projects img{
     width: 452px;
-    height: 209px;
+    height: 279px;
     background: #021371 0% 0% no-repeat padding-box;
     opacity: 0.38;
 }
@@ -242,14 +243,16 @@ body {
 
 .container .text {
     position: absolute;
-    top: 40%;
-    left: 20%;
+    text-align: center;
+    top:40%;
+    width: 452px;
+    height: 279px;
     font: normal normal bold 29px/35px Montserrat;
     letter-spacing: 0px;
     color: white;
     opacity: 1;
-    
 }
+
 
 .projects h4 {
     font: normal normal bold 25px/41px Roboto;
@@ -267,10 +270,14 @@ body {
     background: #C19D96;
     color: white;
     opacity: 1;
-    width:50px;
+    width:80px;
     text-align: center;
-    font: normal normal normal 10px/21px Roboto;
+    font: normal normal normal 16px/21px Roboto;
     margin: 0 2px 20px 2px;
+}
+
+i {
+    border-bottom: solid #233446 3px;
 }
 
 .hashtags {
@@ -285,12 +292,10 @@ body {
   }
 
   .project-1-2 {
-    padding-left: 200px;
-    margin:0;
+    width: 452px;
   }
 
   .project-3-4 {
-    padding-right: 170px;
-    margin:0;
+    width: 452px;
 
   }
