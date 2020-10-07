@@ -8,13 +8,19 @@ body {
 /*font-family: 'Roboto', sans-serif;*/
 /*font-family: 'Montserrat', sans-serif;*/
 
+/*HEROIMAGE*/
+
 .header {
     background-color: #233446;
     width: 100%;
     height: 655px;
-    
 }
 
+.hero-image {
+    width: 100%;
+    height: 655px;
+}
+/*CONTAINER FOR THE ICONS IN HEROIMAGE*/
 .icons {
     display: flex;
     justify-content: space-between;
@@ -58,12 +64,13 @@ body {
     width: 35px;
     height: 38px;    
 }
-
+/*CONTAINER FOR THE TEXT IN HEROIMAGE*/
 .text-box {
     display: flex;
     justify-content: flex-start;
+    left:  20%;
+    top:0;
     position: absolute;
-    left: 20%;
 }
 
 .text-box h1 {
@@ -116,7 +123,7 @@ body {
     opacity: 1;
     margin:0;
 }
-
+/*CONTAINER FOR THE PROFILE PICTURE*/
 .profile {
     display: flex;
     justify-content: flex-end;
@@ -133,7 +140,7 @@ body {
     opacity: 1;
     margin:0;
 }
-
+/*SECTION WITH TEXT ABOUT*/
 .about {
     width: 100%;
     height: 439px;
@@ -156,7 +163,7 @@ body {
     opacity: 1;
     margin:0;
 }
-
+/*SECTION WITH TECH SKILLS*/
 .tech {
     display: flex;
     justify-content: center;
@@ -187,15 +194,15 @@ body {
     background-color: #233446;
     opacity: 1;
 }
-
-.area {
+/*SECTION FOR FEATURED PROJECTS*/
+.project-area {
     position: absolute;
     top: 1642px;
     width: 100%;
     background: #8F6B67 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-
+/*CONTAINER FOR THE HEADER*/
 .featured {
     width:100%;
     margin-bottom: 200px;
@@ -203,7 +210,7 @@ body {
     justify-content: center;
 }
 
-
+/*HEADER TEXT STYLING*/
 .featured h5 { 
     position: absolute;
     top: 128px;
@@ -218,7 +225,7 @@ body {
     margin:0;
 }
 
-
+/*CONTAINER FOR THE PROJECT PICTURES AND INFO*/
 .projects {
     padding-top: 100px;
     display: grid;
@@ -229,8 +236,6 @@ body {
     /*border: red solid 2px;*/
 }
 
-
-
 .projects img{
     width: 452px;
     height: 279px;
@@ -238,7 +243,7 @@ body {
     opacity: 0.38;
 }
 
-
+/*TEXT ON THE PROJECT PICTURE*/
 .container .text {
     position: absolute;
     text-align: center;
@@ -273,52 +278,52 @@ body {
     font: normal normal normal 16px/21px Roboto;
     margin: 0 2px 20px 2px;
 }
- /*The arrow after text*/
+ /*THE ARROWS AFTER THE PROJECT TEXTS */
 .hashtags {
     display: flex;
     flex-direction: row;
 }
- /*The line under the arrow after text*/
+ /*THE LINE UNDER THE ARROWS*/
  i {
     border-bottom: solid #233446 3px;
 }
-.container {
+/*BOXING IN THE PROJECT TO PUT IN THE TEXT*/
+.text-container {
     position: relative;
     text-decoration: none;
     width: 452px;
-  }
-
-  .project-1-2 {
+    
+}
+/*CONTAINER FOR THE LEFT COLUMN*/
+.project-1-2 {
     width: 452px;
-  }
-
-  .project-3-4 {
+}
+/*CONTAINER FOR THE RIGHT COLUMN*/
+.project-3-4 {
     width: 452px;
-  }
-
-  .other  {
-      color: #C19D96;
-      text-align: center;
-      /*border: solid blue 5px;*/
-      width: 100%;
-      font-size: 38px;
-      margin-top: 100px;
-      font: normal normal bold 38px/47px Montserrat;
-  }
-
-  .other-projects1 {
-    /*border: solid green 5px;*/
+}
+/*CONTERINER FOR THE OTHER HEADER IN PROJECT AREA*/
+.other-header  {
+    color: #C19D96;
+    text-align: center;
+    width: 100%;
+    font-size: 38px;
+    margin-top: 100px;
+    font: normal normal bold 38px/47px Montserrat;
+}
+/*CONTAINER FOR THE OTHER PROJECTS*/
+.other-projects1 {
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
-  }
+}
+/*TEXTBOX FOR THE OTHER PROJECTS TO BE ABLE TO CENTER IT 
+WITH FLEXBOX*/
+.o-projects {
+    width: 50%;   
+}
 
-  .o-projects {
-      width: 50%;
-      /*border: solid yellow 5px;*/
-    }
-
-  .o-projects h4 {
+.o-projects h4 {
     font: normal normal bold 25px/41px Roboto;
     margin:10px 0 0 0;
     color: #233446
@@ -338,4 +343,69 @@ body {
     text-align: center;
     font: normal normal normal 16px/21px Roboto;
     margin: 0 2px 20px 2px;
+}
+
+
+
+/*SECTION ABOUT CODE */
+
+.about-code {
+    position: absolute; 
+    top: 3689px;
+    border: solid red 2px; 
+    width: 100%;  
+}
+
+.about-code-header {
+    width:100%;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-code-header h5 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 128px;
+    padding: 0 10px 0 10px;
+    height: 58px;
+    text-align: center;
+    font: normal normal bold 48px/58px Montserrat;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: #FFFFFF;
+    background-color: #C19D96;
+}
+
+.about-code-container {
+    border: solid pink 2px; 
+    width: 100%;
+}
+
+.column-one {
+    border: solid green 2px; 
+    width: 100%;
+}
+
+.column-two {
+    border: solid yellow 2px; 
+    width: 100%;
+}
+
+.more-thoughts-header {
+    border: solid blue 2px; 
+    color: #C19D96;
+    text-align: center;
+    width: 100%;
+    font-size: 38px;
+    margin-top: 100px;
+    font: normal normal bold 38px/47px Montserrat;
+}
+
+.article-image {
+    width: 452px;
+    height: 279px;
+    background: #021371 0% 0% no-repeat padding-box;
+    opacity: 0.38;
 }
