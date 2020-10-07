@@ -244,7 +244,7 @@ body {
 }
 
 /*TEXT ON THE PROJECT PICTURE*/
-.container .text {
+.text-container .text {
     position: absolute;
     text-align: center;
     top:40%;
@@ -352,22 +352,22 @@ WITH FLEXBOX*/
 .about-code {
     position: absolute; 
     top: 3689px;
-    border: solid red 2px; 
+    border: solid red 20px; 
     width: 100%;  
 }
 
 .about-code-header {
     width:100%;
-    margin-bottom: 200px;
+    height:200px;
     display: flex;
     justify-content: center;
+    border: solid blue 20px; 
 }
 
 .about-code-header h5 {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 128px;
     padding: 0 10px 0 10px;
     height: 58px;
     text-align: center;
@@ -379,18 +379,23 @@ WITH FLEXBOX*/
 }
 
 .about-code-container {
-    border: solid pink 2px; 
+    border: solid pink 20px; 
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    
 }
 
 .column-one {
     border: solid green 2px; 
-    width: 100%;
+    width: 452px;
 }
 
 .column-two {
     border: solid yellow 2px; 
-    width: 100%;
+    width: 452px;
+    text-decoration: none;
 }
 
 .more-thoughts-header {
@@ -408,4 +413,26 @@ WITH FLEXBOX*/
     height: 279px;
     background: #021371 0% 0% no-repeat padding-box;
     opacity: 0.38;
+}
+
+.about-code-container h5 {
+    font: normal normal normal 25px/41px Roboto;
+    color: #8F6B67;
+    margin: 0;
+}
+
+.about-code-container h6 {
+    font: normal normal bold 30px/41px Roboto;
+    color: #233446;
+    margin: 0;
+}
+
+.about-code-container article {
+    color: black;
+    font: normal normal normal 25px/41px Roboto;
+}
+
+.about-code-container .arrows {
+    color: #8F6B67;
+    font: normal normal bold 25px/41px Roboto;
 }
