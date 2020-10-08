@@ -55,6 +55,8 @@ body {
     opacity: 1;
 }
 
+
+
 .icon1 {
     width: 31px;
     height: 30px;
@@ -538,9 +540,8 @@ WITH FLEXBOX*/
 
 /*SECTION FOR MORE INFO*/
 .for-more {
-    border: solid blue 5px;
     position: absolute;
-    top: 5880px;
+    top: 5990px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -581,8 +582,8 @@ WITH FLEXBOX*/
     position: absolute;
     top: 108px;
     right: 10%;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 3px solid #FFFFFF;
     opacity: 1;
@@ -597,8 +598,8 @@ WITH FLEXBOX*/
     position: absolute;
     top: 108px;
     right: 17%;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 3px solid #FFFFFF;
     opacity: 1;
@@ -625,3 +626,576 @@ WITH FLEXBOX*/
     margin-top: 100px;
     font: normal normal bold 38px/47px Montserrat;
 }
+
+@media (min-width:375px) and (max-width:800px) {
+    .header {
+        background-color: #233446;
+        width: 100%;
+        height: 508px;
+    }
+    
+    .hero-image {
+        width: 100%;
+        height: 508px;
+    }
+    /*CONTAINER FOR THE ICONS IN HEROIMAGE*/
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        justify-content: flex-end;
+    }
+    
+    .icon1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 105px;
+        right: 10%;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        border: 3px solid #FFFFFF;
+        opacity: 1;
+    }
+    
+    .icon2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 105px;
+        right: 17%;
+        width: 39px;
+        height: 39px;
+        border: 3px solid white;
+        margin: 0 20px 0 0;
+    }
+
+    .icon{
+        width: 17px;
+        height: 18px;
+    }
+    
+   
+    /*CONTAINER FOR THE TEXT IN HEROIMAGE*/
+    .text-box {
+        display: flex;
+        justify-content: flex-start;
+        left:  20%;
+        top:0;
+        position: absolute;
+    }
+    
+    .text-box h1 {
+        position: absolute;
+        top: 176px;
+        width: 300px;
+        text-align: left;
+        font: normal normal normal 13px/15px Roboto;
+        letter-spacing: 1.12px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin:0;
+    }
+    
+    .text-box h2 {
+        position: absolute;
+        top: 196px;
+        width: 100px;
+        text-align: left;
+        font: normal normal bold 40px/49px Montserrat;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin:0;
+    }
+    .text-box h3 {
+        position: absolute;
+        top: 242px;     
+        width: 100px;
+        text-align: left;
+        font: normal normal bold 39px/48px Montserrat;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin:0;
+    }
+    
+    .text-box h4 {
+        position: absolute;
+        top: 296px;   
+        width: 300px; 
+        text-align: left;
+        font: normal normal bold 24px/29px Montserrat;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin:0;
+    }
+    /*CONTAINER FOR THE PROFILE PICTURE*/
+    .profile {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .profile-picture {
+        position: absolute;
+        right: 10%;
+        top: 355px;
+        border-radius: 50%;
+        border: solid white 3px;
+        width: 162px;
+        height: 162px;
+        opacity: 1;
+        margin:0;
+    }
+    /*SECTION WITH TEXT ABOUT*/
+    .about {
+        width: 100%;
+        height: 339px;
+        background: #233446;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+  
+  
+    .about p {
+        
+        position: absolute;
+        top: 590px;
+        width: 80%;
+        height: 192px;
+        font-size: 30px;
+        text-align: center;
+        font: normal normal normal 17px/29px Montserrat;
+        letter-spacing: 0px;
+        color: #233446;
+        opacity: 1;
+        margin:0;
+    }
+    /*SECTION WITH TECH SKILLS*/
+    .tech {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .tech h5 {
+        top: 920px;
+        width: 67px;
+        height: 27px;
+        margin:0;
+        font: normal normal bold 22px/27px Montserrat;
+        
+    }
+    .tech p {
+        top: 990px;
+        width: 80%;
+    }
+    
+    /*SECTION FOR FEATURED PROJECTS*/
+    .project-area {
+        top: 1242px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*CONTAINER FOR THE HEADER*/
+    .featured {
+        width:100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        }
+    
+    /*HEADER TEXT STYLING*/
+    .featured h5 { 
+        top: 70px;
+        width: 258px;
+        height: 27px;
+        
+        font: normal normal bold 22px/27px Montserrat;
+    }
+    
+    /*CONTAINER FOR THE PROJECT PICTURES AND INFO*/
+    .projects {
+        margin-top: 50px;
+        width: 303px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .projects img{
+        width: 303px;
+        height: 179px;
+    }
+    
+    /*TEXT ON THE PROJECT PICTURE*/
+    .text-container .text {
+        top:35%;
+        width: 303px;
+        height: 27px;
+        font: normal normal bold 29px/35px Montserrat;
+    }
+    
+    
+    .projects h4 {
+        font: normal normal bold 17px/29px Roboto;
+        margin:0;
+        color: #233446
+    }
+    
+    .projects h5 {
+        font: normal normal normal 17px/29px Roboto;
+        margin:0;
+        color: white;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    
+    .projects h6 {
+        background: #C19D96;
+        color: white;
+        opacity: 1;
+        width: 60px;
+        text-align: center;
+        font: normal normal normal 9px/10px Roboto;
+    }
+   
+    /*BOXING IN THE PROJECT TO PUT IN THE TEXT*/
+    .text-container {
+       width: 0px;
+        text-decoration: none;   
+    }
+    
+    .project-area .arrows {
+        color: #233446;
+        font: normal normal bold 17px/29px Roboto;
+    }
+    /*CONTAINER FOR THE LEFT COLUMN*/
+    .project-1-2 {
+      width: auto;
+       
+    }
+    /*CONTAINER FOR THE RIGHT COLUMN*/
+    .project-3-4 {
+        width: auto;
+    }
+    /*CONTERINER FOR THE OTHER HEADER IN PROJECT AREA*/
+    .other-header  {
+        margin-top: 50px;
+        font: normal normal bold 21px/25px Montserrat;
+    }
+    /*CONTAINER FOR THE OTHER PROJECTS*/
+    .other-projects1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    /*TEXTBOX FOR THE OTHER PROJECTS TO BE ABLE TO CENTER IT 
+    WITH FLEXBOX*/
+    .o-projects {
+        width: 50%;   
+    }
+    
+    .o-projects h4 {
+        font: normal normal bold 17px/29px Roboto;
+        margin:10px 0 0 0;
+        color: #233446
+    }
+    
+    .o-projects h5 {
+        font: normal normal normal 17px/29px Roboto;
+        margin:0;
+        color: white;
+        padding-bottom: 20px;
+    }
+    
+    .o-projects h6 {
+        background: #C19D96;
+        color: white;
+        opacity: 1;
+        width:80px;
+        text-align: center;
+        font: normal normal normal 9px/10px Roboto;
+        margin: 0 2px 20px 2px;
+    }
+    
+    
+    
+    /*SECTION ABOUT CODE */
+    
+    .about-code {
+        position: absolute; 
+        top: 3750px;
+        width: 100%;  
+    }
+    
+    .about-code-header {
+        width:100%;
+        height:100px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .about-code-header h5 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        padding: 0 10px 0 10px;
+        height: 27px;
+        text-align: center;
+        font: normal normal bold 22px/27px Montserrat;
+        letter-spacing: 0px;
+        opacity: 1;
+        color: #FFFFFF;
+        background-color: #233446;
+    }
+    
+    .about-code-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        
+    }
+    
+    .column-one {
+      width: 301px;;
+    }
+    
+    .column-two { 
+        width: 301px;;
+        text-decoration: none;
+    }
+    
+    .article-image {
+        width: 303px;
+        height: 179px;
+        background: #021371 0% 0% no-repeat padding-box;
+        opacity: 0.38;
+
+    }
+    
+    .about-code-container h5 {
+        font: normal normal normal 17px/32px Roboto;
+        color: #8F6B67;
+        margin: 0;
+    }
+    
+    .about-code-container h6 {
+        font: normal normal bold 21px/32px Roboto;
+    }
+    
+    .about-code-container article {
+        color: black;
+        font: normal normal normal 17px/32px Roboto;
+    }
+    
+    .about-code-container .arrows {
+        color: #8F6B67;
+        font: normal normal bold 17px/32px Roboto;
+    }
+    
+    .more-thoughts-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        
+    }
+    .more-thoughts-header {
+        color: #8F6B67;
+        text-align: center;
+        width: 100%;
+        font-size: 38px;
+        margin-top: 100px;
+        font: normal normal bold 21px/25px Montserrat;
+    }
+
+    .more-thoughts-container .arrows {
+        color: #8F6B67;
+        font: normal normal bold 17px/32px Roboto;
+    }
+
+    .textlåda{
+        width: 80%;
+        text-align: left;
+    }
+    
+    .textlåda h5 {
+        font: normal normal normal 17px/29px Roboto;
+        color: #C19D96;
+        margin: 0;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    
+    .more-text {
+        font: normal normal bold 17px/29px Roboto;
+        color: #233446;
+        width: 80%;
+    }
+
+    /*SECTION FOR SKILLS*/
+    
+    .skills {
+        position: absolute;
+        top: 5000px;
+        width: 100%;
+        background: #C19D96;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        justify-items: center;
+    }
+    
+    .skills-header {
+        width: 98px;
+        text-align: center;
+        grid-column: 2 / 4;
+        grid-row: 1;
+    }
+    
+    .skills-header h5 {
+        height: 29px;   
+        text-align: center;
+        font: normal normal bold 22px/27px Montserrat;
+        letter-spacing: 0px;
+        opacity: 1;
+        color: #FFFFFF;
+        background-color: #8F6B67;
+    }
+    /*The header in every column*/
+    .bold {
+        font: normal normal bold 17px/29px Roboto;        
+        color: #8F6B67;
+    }
+    .one {
+        grid-column: 2 / 2;
+        grid-row: 2 / 3;
+        text-align: center;
+        font: normal normal normal 17px/29px Roboto;
+        color: white;
+    }
+    
+    .two {
+        grid-column: 3/ 3;
+        grid-row: 2 /3 ;
+        text-align: center;
+        font: normal normal normal 17px/29px Roboto;
+        color: white;
+    }
+    
+    .three {
+        grid-column: 2 / 2;
+        grid-row: 3 / 4;
+        text-align: center;
+        font: normal normal normal 17px/29px Roboto;
+        color: white;
+        padding-bottom: 100px;
+    }
+    
+    .four {
+        grid-column: 3 / 4;
+        grid-row: 3 / 3;
+        text-align: center;
+        font: normal normal normal 17px/29px Roboto;
+        color: white;
+        padding-bottom: 100px;
+    }
+    
+    /*SECTION FOR MORE INFO*/
+    .for-more {
+        position: absolute;
+        top: 5889px;
+        width: 100%;
+        display: grid;
+        height:500px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        justify-items: center;
+        background-color:#8F6B67;
+    }
+    
+    .for-more-header {
+        border: solid red 5px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 38px;
+        font: normal normal bold 38px/47px Montserrat;
+        grid-column: 2 / 2;
+        grid-row: 1 / 5;
+    }
+    
+    .for-more h5 {
+        border: solid red 5px;
+        padding: 0 10px 0 10px;
+        width: 126px;
+        height: 27px;
+        text-align: center;
+        font: normal normal bold 22px/27px Montserrat;
+        letter-spacing: 0px;
+        opacity: 1;
+        color: #FFFFFF;
+        background-color: #233446;
+    }
+    
+    .for-more .icon1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 59px;
+        height: 58px;
+        border-radius: 50%;
+        border: 3px solid #FFFFFF;
+        opacity: 1;
+        grid-column: 1 / 2;
+        grid-row: 2/ 3;
+    }
+        
+    .for-more .icon2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 59px;
+        height: 58px;
+        border-radius: 50%;
+        border: 3px solid #FFFFFF;
+        opacity: 1;
+        grid-column: 2 / 3;
+        grid-row: 2/ 3;
+    }
+    
+    
+    /*SECTION FOR CONTACT*/
+    
+    .contact {
+        position: absolute;
+        top: 6500px;
+        width: 100%;
+        border: solid blue 5px;
+        background-color: #233446;
+    }
+    
+    .contact-header {
+        color: #8F6B67;
+        text-align: center;
+        width: 100%;
+        font-size: 38px;
+        margin-top: 100px;
+        font: normal normal bold 38px/47px Montserrat;
+    }
+    
+  }
+
+  @media (min-width: 668) and (max-width: 1024px){
+    
+    
+  }
