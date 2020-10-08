@@ -543,27 +543,16 @@ WITH FLEXBOX*/
     position: absolute;
     top: 5990px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #C19D96;
 }
 
-.for-more-header {
-    display: flex;
-    justify-content: center;
-    color: #8F6B67;
-    text-align: center;
-    width: 100%;
-    font-size: 38px;
-    font: normal normal bold 38px/47px Montserrat;
-    grid-column: 3 / 3;
-    grid-row: 1 / 1;
-}
+
 
 .for-more h5 {
+    border: solid red 5px;
     width: 300px;
     padding: 0 10px 0 10px;
     height: 58px;
@@ -575,36 +564,49 @@ WITH FLEXBOX*/
     background-color: #233446;
 }
 
-.icon1 {
+
+.icon-container{
+        border: solid red 5px;
+        width: 100%;
+        height: 160px;
+        display: grid;
+        
+}
+
+.icon-container .icon1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 108px;
-    right: 10%;
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     border: 3px solid #FFFFFF;
     opacity: 1;
-    grid-column: 2 / 2;
-    grid-row: 5 / 4;
 }
     
-.icon2 {
+.icon-container .icon2 {
     justify-content: center;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 108px;
-    right: 17%;
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     border: 3px solid #FFFFFF;
     opacity: 1;
-    grid-column: 3 / 3;
-    grid-row: 5 / 4;
+    margin-left: 108px;
+}
+
+.icon-container .icon{
+    width: 51px;
+    height: 49px;
+}
+
+
+.icon-text h1 {
+    font: normal normal bold 25px/41px Roboto;
+    color: white;
+    border: solid red 5px;
+
 }
 
 
@@ -614,7 +616,6 @@ WITH FLEXBOX*/
     position: absolute;
     top: 6500px;
     width: 100%;
-    border: solid blue 5px;
     background-color: #233446;
 }
 
@@ -888,12 +889,7 @@ WITH FLEXBOX*/
         margin-top: 50px;
         font: normal normal bold 21px/25px Montserrat;
     }
-    /*CONTAINER FOR THE OTHER PROJECTS*/
-    .other-projects1 {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 100px;
-    }
+    
     /*TEXTBOX FOR THE OTHER PROJECTS TO BE ABLE TO CENTER IT 
     WITH FLEXBOX*/
     .o-projects {
@@ -902,34 +898,25 @@ WITH FLEXBOX*/
     
     .o-projects h4 {
         font: normal normal bold 17px/29px Roboto;
-        margin:10px 0 0 0;
-        color: #233446
     }
     
     .o-projects h5 {
         font: normal normal normal 17px/29px Roboto;
-        margin:0;
-        color: white;
         padding-bottom: 20px;
     }
     
     .o-projects h6 {
-        background: #C19D96;
-        color: white;
-        opacity: 1;
-        width:80px;
+        width:50px;
         text-align: center;
         font: normal normal normal 9px/10px Roboto;
         margin: 0 2px 20px 2px;
     }
-    
-    
-    
+        
     /*SECTION ABOUT CODE */
     
     .about-code {
         position: absolute; 
-        top: 3750px;
+        top: 3620px;
         width: 100%;  
     }
     
@@ -1003,7 +990,7 @@ WITH FLEXBOX*/
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 30px;
         
     }
     .more-thoughts-header {
@@ -1017,23 +1004,25 @@ WITH FLEXBOX*/
 
     .more-thoughts-container .arrows {
         color: #8F6B67;
-        font: normal normal bold 17px/32px Roboto;
-    }
+        font: normal normal bold 17px/29px Roboto;
+        }
 
     .textlåda{
         width: 80%;
         text-align: left;
     }
-    
-    .textlåda h5 {
-        font: normal normal normal 17px/29px Roboto;
-        color: #C19D96;
-        margin: 0;
-        text-align: left;
-        padding-bottom: 10px;
+   
+    .more-link {
+        text-decoration: none;
     }
-    
-    .more-text {
+
+    .more-text1 {
+        font: normal normal normal 17px/29px Roboto;
+        color: #8F6B67;
+        width: 80%;
+    }
+
+    .more-text2 {
         font: normal normal bold 17px/29px Roboto;
         color: #233446;
         width: 80%;
@@ -1043,7 +1032,7 @@ WITH FLEXBOX*/
     
     .skills {
         position: absolute;
-        top: 5000px;
+        top: 5250px;
         width: 100%;
         background: #C19D96;
         display: grid;
@@ -1111,27 +1100,13 @@ WITH FLEXBOX*/
     /*SECTION FOR MORE INFO*/
     .for-more {
         position: absolute;
-        top: 5889px;
+        top: 6100px;
         width: 100%;
-        display: grid;
-        height:500px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-        justify-items: center;
-        background-color:#8F6B67;
-    }
-    
-    .for-more-header {
-        border: solid red 5px;
+        height:300px;
         display: flex;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        font-size: 38px;
-        font: normal normal bold 38px/47px Montserrat;
-        grid-column: 2 / 2;
-        grid-row: 1 / 5;
+        flex-direction: column;
+        align-items: center;
+        background-color:#8F6B67;
     }
     
     .for-more h5 {
@@ -1145,42 +1120,42 @@ WITH FLEXBOX*/
         opacity: 1;
         color: #FFFFFF;
         background-color: #233446;
+        
+    }
+
+    .icon-container {
+        border: solid red 5px;
+        width: 100%;
+        height: 500px;
+       
+
     }
     
-    .for-more .icon1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+   .icon1 {
         width: 59px;
         height: 58px;
-        border-radius: 50%;
-        border: 3px solid #FFFFFF;
-        opacity: 1;
-        grid-column: 1 / 2;
-        grid-row: 2/ 3;
+        grid-column: 3/ 3;
+        grid-row: 2 /3 ;
+        
     }
         
-    .for-more .icon2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .icon2 {
         width: 59px;
         height: 58px;
-        border-radius: 50%;
-        border: 3px solid #FFFFFF;
-        opacity: 1;
-        grid-column: 2 / 3;
-        grid-row: 2/ 3;
+
     }
-    
+    .for-more .icon {
+        width: 21px;
+        height: 22px;
+    }
+   
     
     /*SECTION FOR CONTACT*/
     
     .contact {
         position: absolute;
-        top: 6500px;
+        top: 7500px;
         width: 100%;
-        border: solid blue 5px;
         background-color: #233446;
     }
     
