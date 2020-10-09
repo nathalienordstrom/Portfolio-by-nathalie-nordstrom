@@ -27,12 +27,12 @@ body {
     justify-content: flex-end;
 }
 
-.circle1 {
+.icon1 {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 108px;
+    top: 105px;
     right: 10%;
     width: 80px;
     height: 80px;
@@ -41,30 +41,23 @@ body {
     opacity: 1;
 }
 
-.circle2 {
+.icon2 {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 108px;
+    top: 105px;
     right: 17%;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 3px solid #FFFFFF;
-    opacity: 1;
+    border: 3px solid white;
+    margin: 0 20px 0 0;
 }
 
-
-
-.icon1 {
-    width: 31px;
-    height: 30px;
-}
-
-.icon2 {
+.icon{
     width: 35px;
-    height: 38px;    
+    height: 38px;
 }
 /*CONTAINER FOR THE TEXT IN HEROIMAGE*/
 .text-box {
@@ -151,6 +144,7 @@ body {
     justify-content: center;
     align-content: center;
 }
+
 p .about-text {
     color: white;
     border: red; 
@@ -159,7 +153,7 @@ p .about-text {
 .about p {
     position: absolute;
     top: 785px;
-    width: 1088px;
+    width: 70%;
     height: 192px;
     font-size: 30px;
     text-align: center;
@@ -227,7 +221,7 @@ p .about-text {
     letter-spacing: 0px;
     opacity: 1;
     color: #FFFFFF;
-    background-color: #C19D96;
+    background-color: #233446;
     margin:0;
 }
 
@@ -383,7 +377,7 @@ WITH FLEXBOX*/
     letter-spacing: 0px;
     opacity: 1;
     color: #FFFFFF;
-    background-color: #233446;
+    background-color: #C19D96;
 }
 
 .about-code-container {
@@ -433,14 +427,14 @@ WITH FLEXBOX*/
 }
 
 .more-thoughts-container {
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;    
 }
 .more-thoughts-header {
-    color: #233446;
+    color: #C19D96;
     text-align: center;
     width: 100%;
     font-size: 38px;
@@ -448,15 +442,15 @@ WITH FLEXBOX*/
     font: normal normal bold 38px/47px Montserrat;
 }
 
-.textlåda{
-    width: 600px;
+.more-thoughts-text{
+    width: 60%;
 }
 
-.textlåda h5 {
+.more-thoughts-text h5 {
     font: normal normal normal 25px/29px Roboto;
     color: #C19D96;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .more-text {
@@ -464,8 +458,29 @@ WITH FLEXBOX*/
     color: #233446;
 }
 
+.more-thoughts-container .arrows {
+    color: #8F6B67;
+    font: normal normal bold 25px/29px Roboto;
+    }
+
+.more-link {
+    text-decoration: none;
+}
+
 .link-text {
     padding: 20px;
+}
+
+.more-text1 {
+    font: normal normal normal 25px/29px Roboto;    
+    color: #8F6B67;
+    width: 80%;
+}
+
+.more-text2 {
+    font: normal normal bold 25px/29px Roboto;
+    color: #233446;
+    width: 80%;
 }
 
 /*SECTION FOR SKILLS*/
@@ -541,18 +556,17 @@ WITH FLEXBOX*/
 /*SECTION FOR MORE INFO*/
 .for-more {
     position: absolute;
-    top: 5990px;
+    top: 5889px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #C19D96;
+    background-color: #8F6B67;
 }
 
 
 
 .for-more h5 {
-    border: solid red 5px;
     width: 300px;
     padding: 0 10px 0 10px;
     height: 58px;
@@ -566,14 +580,16 @@ WITH FLEXBOX*/
 
 
 .icon-container{
-        border: solid red 5px;
-        width: 100%;
-        height: 160px;
-        display: grid;
-        
+    width: 100%;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    grid-auto-rows: minmax(100px, auto);
 }
 
-.icon-container .icon1 {
+.icon-container .iconA {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -582,9 +598,12 @@ WITH FLEXBOX*/
     border-radius: 50%;
     border: 3px solid #FFFFFF;
     opacity: 1;
+    grid-column: 2;
+    
+
 }
     
-.icon-container .icon2 {
+.icon-container .iconB {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -593,7 +612,7 @@ WITH FLEXBOX*/
     border-radius: 50%;
     border: 3px solid #FFFFFF;
     opacity: 1;
-    margin-left: 108px;
+    grid-column: 3 ;
 }
 
 .icon-container .icon{
@@ -601,32 +620,77 @@ WITH FLEXBOX*/
     height: 49px;
 }
 
-
-.icon-text h1 {
-    font: normal normal bold 25px/41px Roboto;
-    color: white;
-    border: solid red 5px;
+.icon-text {
+    width: 100%;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    grid-auto-rows: minmax(100px, auto);
 
 }
 
-
+.icon-text1 {
+    font: normal normal bold 25px/41px Roboto;
+    color: white;
+    grid-column: 2;
+}
+.icon-text2 {
+    font: normal normal bold 25px/41px Roboto;
+    color: white;
+    grid-column: 3;
+}
 /*SECTION FOR CONTACT*/
 
 .contact {
     position: absolute;
-    top: 6500px;
+    top: 6400px;
     width: 100%;
+    padding-bottom: 80px;
+    padding-top: 40px;
     background-color: #233446;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contact-header {
+    text-align: center;
+    width: 100%;
+    font-size: 38px;
+    margin-top: 0px;
+  
+}
+
+.contact-header h5 {
     color: #8F6B67;
     text-align: center;
     width: 100%;
     font-size: 38px;
-    margin-top: 100px;
+    margin-bottom:10px;
     font: normal normal bold 38px/47px Montserrat;
 }
+    
+.contact-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.contact-container h1 {
+    font: normal normal normal 30px/50px Montserrat;   
+    color: white;
+    margin: 0;
+}
+
+.contact-container a {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font: normal normal normal 30px/50px Montserrat;}
 
 @media (min-width:375px) and (max-width:800px) {
     .header {
@@ -763,10 +827,9 @@ WITH FLEXBOX*/
   
   
     .about p {
-        
+        width: 70%;
         position: absolute;
         top: 590px;
-        width: 80%;
         height: 192px;
         font-size: 30px;
         text-align: center;
@@ -792,7 +855,7 @@ WITH FLEXBOX*/
     }
     .tech p {
         top: 990px;
-        width: 80%;
+        width: 70%;
     }
     
     /*SECTION FOR FEATURED PROJECTS*/
@@ -985,14 +1048,7 @@ WITH FLEXBOX*/
         color: #8F6B67;
         font: normal normal bold 17px/32px Roboto;
     }
-    
-    .more-thoughts-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        
-    }
+
     .more-thoughts-header {
         color: #8F6B67;
         text-align: center;
@@ -1002,29 +1058,41 @@ WITH FLEXBOX*/
         font: normal normal bold 21px/25px Montserrat;
     }
 
+    .more-thoughts-text{
+        width: 60%;
+    }
+    
+    .more-thoughts-text h5 {
+        font: normal normal normal 25px/29px Roboto;
+        color: #C19D96;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .more-text {
+        font: normal normal bold 25px/29px Roboto;
+        color: #233446;
+    }
+    
     .more-thoughts-container .arrows {
         color: #8F6B67;
-        font: normal normal bold 17px/29px Roboto;
-        }
-
-    .textlåda{
-        width: 80%;
-        text-align: left;
-    }
-   
+        font: normal normal bold 17px/29px Roboto;        }
+    
     .more-link {
         text-decoration: none;
     }
-
+    
+    .link-text {
+        padding: 20px;
+    }
+    
     .more-text1 {
-        font: normal normal normal 17px/29px Roboto;
-        color: #8F6B67;
+        font: normal normal normal 17px/29px Roboto;        color: #8F6B67;
         width: 80%;
     }
-
+    
     .more-text2 {
-        font: normal normal bold 17px/29px Roboto;
-        color: #233446;
+        font: normal normal bold 17px/29px Roboto;        color: #233446;
         width: 80%;
     }
 
@@ -1094,83 +1162,74 @@ WITH FLEXBOX*/
         text-align: center;
         font: normal normal normal 17px/29px Roboto;
         color: white;
-        padding-bottom: 100px;
+        padding-bottom: 90px;
     }
     
     /*SECTION FOR MORE INFO*/
-    .for-more {
-        position: absolute;
-        top: 6100px;
-        width: 100%;
-        height:300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color:#8F6B67;
-    }
-    
-    .for-more h5 {
-        border: solid red 5px;
-        padding: 0 10px 0 10px;
-        width: 126px;
-        height: 27px;
-        text-align: center;
-        font: normal normal bold 22px/27px Montserrat;
-        letter-spacing: 0px;
-        opacity: 1;
-        color: #FFFFFF;
-        background-color: #233446;
-        
-    }
 
-    .icon-container {
-        border: solid red 5px;
-        width: 100%;
-        height: 500px;
-       
-
-    }
-    
-   .icon1 {
-        width: 59px;
-        height: 58px;
-        grid-column: 3/ 3;
-        grid-row: 2 /3 ;
-        
-    }
-        
-    .icon2 {
-        width: 59px;
-        height: 58px;
-
-    }
-    .for-more .icon {
-        width: 21px;
-        height: 22px;
-    }
+    /*header*/
+.for-more {
+    position: absolute;
+    top: 6039px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
+}
+     /*text-header*/
+.for-more h5 {
+    width: 126px;
+    height: 27px;
+    margin-top:50px;
+    font: normal normal bold 22px/27px Montserrat;
+}
+
+.icon-container {
+    height: 60px;
+}
+
+.icon-container .iconA {
+    width: 59px;
+    height: 58px;
+}
     
+.icon-container .iconB {
+    width: 59px;
+    height: 58px;
+}
+    
+.icon-container .icon{
+    width: 21px;
+    height: 22px;
+}
+    
+.icon-text {
+    width: 100%;
+    height: 90px;
+}
+    
+.icon-text1 {
+    font: normal normal 900 11px/41px Avenir;  
+}
+.icon-text2 {
+    font: normal normal 900 11px/41px Avenir;
+}
     /*SECTION FOR CONTACT*/
     
-    .contact {
-        position: absolute;
-        top: 7500px;
-        width: 100%;
-        background-color: #233446;
-    }
-    
-    .contact-header {
-        color: #8F6B67;
-        text-align: center;
-        width: 100%;
-        font-size: 38px;
-        margin-top: 100px;
-        font: normal normal bold 38px/47px Montserrat;
-    }
-    
-  }
+.contact {
+    top: 6289px;
+}
 
-  @media (min-width: 668) and (max-width: 1024px){
+.contact-header h5 {
+    font: normal normal bold 21px/25px Montserrat;}
     
-    
-  }
+.contact-container h1 {
+    font: normal normal bold 17px/29px Roboto;
+}
+
+.contact-container a {
+    font: normal normal normal 17px/29px Roboto;
+}
+}
