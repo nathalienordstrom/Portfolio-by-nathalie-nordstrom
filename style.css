@@ -556,7 +556,7 @@ WITH FLEXBOX*/
 /*SECTION FOR MORE INFO*/
 .for-more {
     position: absolute;
-    top: 5770px;
+    top: 5680px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -645,7 +645,7 @@ WITH FLEXBOX*/
 
 .contact {
     position: absolute;
-    top: 6300px;
+    top: 6200px;
     width: 100%;
     padding-bottom: 80px;
     padding-top: 40px;
@@ -1210,5 +1210,18 @@ WITH FLEXBOX*/
 
 .contact-container a {
     font: normal normal normal 17px/29px Roboto;
+}
+}
+
+
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+.for-more {
+    top: 5540px;
+}
+
+.contact {
+    top: 5790px;
 }
 }
