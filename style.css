@@ -134,44 +134,38 @@ body {
 .about {
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	align-content: center;
-	border: solid red 2px;
+	flex-direction: column;
+	align-items: center;
+	background: #233446;
 }
 .about-text {
 	color: white;	
-	margin: 100px 50px 50px 50px;
+	font: normal normal normal 30px/40px Montserrat;
 	text-align: center;
-	font: normal normal normal 18px/30px Montserrat;
-	text-align: center;
-	
+	padding: 20px 0 20px 0;
+	margin: 100px  200px 100px 200px ;
+
 }
 
 /*SECTION WITH TECH SKILLS*/
-
 .tech {
+	width: 100%;
 	display: flex;
-	justify-content: center;
-	align-content: center;
+	flex-direction: column;
+	align-items: center;
+
+padding-bottom: 100px;
 }
+
 .tech p {
-	position: absolute;
-	top: 1371px;
-	left:60px;
-	width: 70%;
-	height: 150px;
 	text-align: center;
-	font: normal normal normal 20px/20px Montserrat;
+	font: normal normal normal 30px/40px Montserrat;
 	letter-spacing: 0px;
 	opacity: 1;
 	margin: 0;
+	margin: 0px  200px 0px 200px ;
 }
 .tech h5 {
-	position: absolute;
-	top: 1170px;
-	left:150px;
-	width: 161px;
-	height: 64px;
 	text-align: center;
 	font: normal normal bold 48px/58px Montserrat;
 	letter-spacing: 0px;
@@ -182,27 +176,24 @@ body {
 /*SECTION FOR FEATURED PROJECTS*/
 
 .project-area {
-	position: absolute;
-	top: 1642px;
 	width: 100%;
-	background: #8F6B67 0% 0% no-repeat padding-box;
+	padding-top: 100px;
+	background: #8F6B67;
 	opacity: 1;
+	margin
+	
 }
 /*CONTAINER FOR THE HEADER*/
 
 .featured {
 	width: 100%;
-	margin-bottom: 200px;
+
 	display: flex;
 	justify-content: center;
 }
 /*HEADER TEXT STYLING*/
 
 .featured h5 {
-	position: absolute;
-	top: 128px;
-	width: 562px;
-	height: 58px;
 	text-align: center;
 	font: normal normal bold 48px/58px Montserrat;
 	letter-spacing: 0px;
@@ -210,6 +201,8 @@ body {
 	color: #FFFFFF;
 	background-color: #233446;
 	margin: 0;
+	padding-left:10px;
+	padding-right:10px;
 }
 /*CONTAINER FOR THE PROJECT PICTURES AND INFO*/
 
@@ -220,7 +213,6 @@ body {
 	width: 99%;
 	justify-items: center;
 	text-align: left;
-	/*border: red solid 2px;*/
 }
 .projects img {
 	width: 452px;
@@ -307,13 +299,13 @@ i {
 .other-projects1 {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 100px;
 }
 /*TEXTBOX FOR THE OTHER PROJECTS TO BE ABLE TO CENTER IT 
 WITH FLEXBOX*/
 
 .o-projects {
 	width: 50%;
+	padding-bottom: 100px;
 }
 .o-projects h4 {
 	font: normal normal bold 25px/41px Roboto;
@@ -337,8 +329,6 @@ WITH FLEXBOX*/
 /*SECTION ABOUT CODE */
 
 .about-code {
-	position: absolute;
-	top: 3440px;
 	width: 100%;
 }
 .about-code-header {
@@ -346,6 +336,7 @@ WITH FLEXBOX*/
 	height: 200px;
 	display: flex;
 	justify-content: center;
+	align-content: center;
 }
 .about-code-header h5 {
 	display: flex;
@@ -363,8 +354,9 @@ WITH FLEXBOX*/
 .about-code-container {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	justify-items: center;
+	padding-bottom: 100px;
 }
 .column-one {
 	width: 452px;
@@ -397,21 +389,24 @@ WITH FLEXBOX*/
 	color: #8F6B67;
 	font: normal normal bold 25px/41px Roboto;
 }
-.more-thoughts-container {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	height: 200px;
-	margin-top: 50px;
-}
+
 .more-thoughts-header {
 	color: #233446;
 	text-align: center;
 	width: 100%;
 	font-size: 38px;
-	margin-top: 100px;
+	margin-top: 80px;
+	margin-bottom: 50px;
 	font: normal normal bold 38px/47px Montserrat;
 }
+.more-thoughts-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 80px;
+}
+
 .more-thoughts-text {
 	width: 60%;
 }
@@ -448,8 +443,7 @@ WITH FLEXBOX*/
 /*SECTION FOR SKILLS*/
 
 .skills {
-	position: absolute;
-	top: 4900px;
+
 	width: 100%;
 	background: #233446;
 	display: grid;
@@ -513,8 +507,6 @@ WITH FLEXBOX*/
 /*SECTION FOR MORE INFO*/
 
 .for-more {
-	position: absolute;
-	top: 5680px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -563,6 +555,7 @@ WITH FLEXBOX*/
 	opacity: 1;
 	grid-column: 3;
 }
+
 .icon-container .icon {
 	width: 51px;
 	height: 49px;
@@ -586,11 +579,10 @@ WITH FLEXBOX*/
 	color: white;
 	grid-column: 3;
 }
+
 /*SECTION FOR CONTACT*/
 
 .contact {
-	position: absolute;
-	top: 6200px;
 	width: 100%;
 	padding-bottom: 80px;
 	padding-top: 40px;
@@ -631,6 +623,8 @@ WITH FLEXBOX*/
 	color: white;
 	font: normal normal normal 30px/50px Montserrat;
 }
+
+
 @media (min-width:375px) and (max-width:800px) {
 	.header {
 		background-color: #233446;
@@ -744,42 +738,22 @@ WITH FLEXBOX*/
 	}
 	/*SECTION WITH TEXT ABOUT*/
 	.about {
-		width: 100%;
-		height: 339px;
 		background: #233446;
-		display: flex;
-		justify-content: center;
-		align-content: center;
+		
 	}
-	.about p {
+	.about-text {
 		width: 70%;
-		position: absolute;
-		top: 590px;
-		height: 192px;
-		font-size: 30px;
-		text-align: center;
 		font: normal normal normal 17px/29px Montserrat;
-		letter-spacing: 0px;
-		color: #233446;
-		opacity: 1;
-		margin: 0;
+		
 	}
 	/*SECTION WITH TECH SKILLS*/
-	.tech {
-		display: flex;
-		justify-content: center;
-		align-content: center;
-	}
+	
 	.tech h5 {
-		top: 920px;
-		width: 67px;
-		height: 27px;
-		margin: 0;
 		font: normal normal bold 22px/27px Montserrat;
 	}
 	.tech p {
-		top: 990px;
-		width: 70%;
+		width: 80%;
+		font: normal normal normal 17px/29px Montserrat;
 	}
 	/*SECTION FOR FEATURED PROJECTS*/
 	.project-area {
@@ -963,8 +937,6 @@ WITH FLEXBOX*/
 	}
 	/*SECTION FOR SKILLS*/
 	.skills {
-		position: absolute;
-		top: 4900px;
 		width: 100%;
 		background: #233446;
 		display: grid;
@@ -1026,8 +998,6 @@ WITH FLEXBOX*/
 	/*SECTION FOR MORE INFO*/
 	/*header*/
 	.for-more {
-		top: 5680px;
-		height: 250px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
