@@ -180,14 +180,11 @@ padding-bottom: 100px;
 	padding-top: 100px;
 	background: #8F6B67;
 	opacity: 1;
-	margin
-	
 }
 /*CONTAINER FOR THE HEADER*/
 
 .featured {
 	width: 100%;
-
 	display: flex;
 	justify-content: center;
 }
@@ -222,15 +219,16 @@ padding-bottom: 100px;
 }
 /*TEXT ON THE PROJECT PICTURE*/
 
-.text-container .text {
+.text {
 	position: absolute;
 	text-align: center;
 	top: 40%;
-	width: 452px;
-	height: 279px;
+	left: 30%;
 	font: normal normal bold 29px/35px Montserrat;
 	letter-spacing: 0px;
 	color: white;
+	border:green solid 2px;
+
 	opacity: 1;
 }
 .projects h4 {
@@ -263,12 +261,31 @@ padding-bottom: 100px;
 i {
 	border-bottom: solid #233446 3px;
 }
+
+.line {
+    border: 1px solid #C19D96;
+    width: 30px;
+    display: inline-block;
+	margin-bottom: 5px;
+	margin-right:0;
+}
+
+.dot {
+    height: 8px;
+	width: 8px;
+	margin-right:2px;
+	margin-bottom:2px;
+    background-color: #8F6B67;
+    border-radius: 50%;
+    display: inline-block;
+}
 /*BOXING IN THE PROJECT TO PUT IN THE TEXT*/
 
 .text-container {
 	position: relative;
 	text-decoration: none;
 	width: 452px;
+	border:red solid;
 }
 .project-area .arrows {
 	color: #233446;
@@ -726,15 +743,28 @@ WITH FLEXBOX*/
 		justify-content: flex-end;
 	}
 	.profile-picture {
-		position: absolute;
-		right: 10%;
-		top: 355px;
-		border-radius: 50%;
-		border: solid white 3px;
+	
 		width: 162px;
 		height: 162px;
-		opacity: 1;
-		margin: 0;
+		
+	}
+
+	.line {
+		border: 1px solid #C19D96;
+		width: 30px;
+		display: inline-block;
+		margin-bottom: 6px;
+		margin-right:0;
+	}
+	
+	.dot {
+		height: 10px;
+		width: 10px;
+		margin-right:5px;
+		margin-bottom:2px;
+		background-color: #8F6B67;
+		border-radius: 50%;
+		display: inline-block;
 	}
 	/*SECTION WITH TEXT ABOUT*/
 	.about {
@@ -1048,11 +1078,23 @@ WITH FLEXBOX*/
 		font: normal normal normal 17px/29px Roboto;
 	}
 }
-@media (min-width: 667px) and (max-width: 1024px) {
+@media (min-width: 1024px) {
 	.for-more {
 		top: 5540px;
 	}
 	.contact {
 		top: 5790px;
+	}
+
+	.line {
+		border: 2px solid #C19D96;
+		width: 30px;
+		margin-bottom: 8px;
+
+	}
+	
+	.dot {
+		height: 15px;
+		width: 15px;
 	}
 }
