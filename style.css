@@ -204,7 +204,7 @@ padding-bottom: 100px;
 /*CONTAINER FOR THE PROJECT PICTURES AND INFO*/
 
 .projects {
-	padding-top: 100px;
+	padding-top: 90px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	width: 99%;
@@ -806,7 +806,6 @@ WITH FLEXBOX*/
 	}
 	/*CONTAINER FOR THE PROJECT PICTURES AND INFO*/
 	.projects {
-		margin-top: 50px;
 		width: 303px;
 		display: flex;
 		flex-direction: column;
