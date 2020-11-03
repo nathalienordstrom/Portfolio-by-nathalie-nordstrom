@@ -25,6 +25,12 @@ body {
 	justify-content: space-between;
 	justify-content: flex-end;
 }
+
+.icon1:hover, .icon1:focus, .icon1:active {
+	box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
 .icon1 {
 	display: flex;
 	justify-content: center;
@@ -37,7 +43,19 @@ body {
 	border-radius: 50%;
 	border: 3px solid white;
 	opacity: 1;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
 }
+.icon2:hover, .icon2:focus, .icon2:active {
+	box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
 .icon2 {
 	display: flex;
 	justify-content: center;
@@ -50,6 +68,13 @@ body {
 	border-radius: 50%;
 	border: 3px solid white;
 	margin: 0 20px 0 0;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
 }
 .icon {
 	width: 35px;
@@ -158,7 +183,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-padding-bottom: 100px;
+	padding-bottom: 100px;
 }
 
 .tech p {
@@ -176,6 +201,8 @@ padding-bottom: 100px;
 	color: #FFFFFF;
 	background-color: #8F6B67;
 	opacity: 1;
+	padding-left:4px;
+	padding-right:4px;
 }
 /*SECTION FOR FEATURED PROJECTS*/
 
@@ -220,7 +247,18 @@ padding-bottom: 100px;
 	height: 279px;
 	background: #021371 0% 0% no-repeat padding-box;
 	opacity: 0.38;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgb(0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow;
+	transition-property: box-shadow;
 }
+.projects img:hover, .projects img:focus, .projects img:active {
+	box-shadow: 0 0 8px 2px rgb(16, 16, 16);
+  }
+
 /*TEXT ON THE PROJECT PICTURE*/
 
 .text {
@@ -551,6 +589,12 @@ WITH FLEXBOX*/
 	justify-items: center;
 	grid-auto-rows: minmax(100px, auto);
 }
+
+.icon-container .iconA:hover, .icon-container .iconA:focus, .icon-container .iconA:active {
+	box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
 .icon-container .iconA {
 	display: flex;
 	justify-content: center;
@@ -561,7 +605,20 @@ WITH FLEXBOX*/
 	border: 3px solid #FFFFFF;
 	opacity: 1;
 	grid-column: 2;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
 }
+
+.icon-container .iconB:hover, .icon-container .iconB:focus, .icon-container .iconB:active {
+	box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
 .icon-container .iconB {
 	justify-content: center;
 	display: flex;
@@ -572,6 +629,13 @@ WITH FLEXBOX*/
 	border: 3px solid #FFFFFF;
 	opacity: 1;
 	grid-column: 3;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
 }
 
 .icon-container .icon {
