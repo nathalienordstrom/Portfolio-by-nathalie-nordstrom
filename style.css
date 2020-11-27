@@ -256,7 +256,7 @@ body {
 	transition-property: box-shadow;
 }
 .projects img:hover, .projects img:focus, .projects img:active {
-	box-shadow: 0 0 8px 2px rgb(16, 16, 16);
+	box-shadow: 0 0 8px 2gitpx rgb(16, 16, 16);
   }
 
 /*TEXT ON THE PROJECT PICTURE*/
